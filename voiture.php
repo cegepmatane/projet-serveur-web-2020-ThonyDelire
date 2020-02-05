@@ -30,7 +30,7 @@ $voiture = $requeteVoiture-> fetch();
 
         <div class="voiture">
         <a href="voiture.php?id=<?=$voiture["id"];?>"></a>
-        <a id="button" href="http://localhost/TPhtml/projet-web-dynamique-2020-ThonyDelire/liste-voiture.php">Accueil</a>
+        <a id="button" href="http://localhost/TPhtml/projet-serveur-web-2020-ThonyDelire/liste-voiture.php">Accueil</a>
         <h3 id="titre" class="nom"><?=$voiture["nom"];?></h3>
         <p class="puissanceHp"><?=$voiture["puissanceHp"];?></p>
         <p class="torque"><?=$voiture["torque"];?></p>
