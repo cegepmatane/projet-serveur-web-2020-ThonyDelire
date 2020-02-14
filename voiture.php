@@ -4,12 +4,12 @@ include "connexion.php";
 $id = $_GET["id"];
 //echo $id;
 
-$MESSAGE_VOITURE = "SELECT id, marque, puissanceHp, torque, resume, nom FROM voiture WHERE id=".$id.";";
+$MESSAGE_VOITURE = "SELECT id, marque, puissanceHp, torque, resume, nom, illustration FROM voiture WHERE id=".$id.";";
 
 $requeteVoiture = $connexion->prepare($MESSAGE_VOITURE);
 $requeteVoiture->execute();
 $voiture = $requeteVoiture-> fetch();
-//print_r
+//print_r($voiture);
 /*<div class="illustation"><?=$voiture["illustration"];?> </div>*/
  ?>
 <!doctype html>
@@ -35,12 +35,13 @@ $voiture = $requeteVoiture-> fetch();
         <p class="puissanceHp"><?=$voiture["puissanceHp"];?></p>
         <p class="torque"><?=$voiture["torque"];?></p>
         <p class="resume"><?=$voiture["resume"];?></p>
+        <img class="illustration" src="illustration/<?=$voiture["illustration"]; ?>" alt=""/>
         
         </div>
 
     </section>
 
-    <footer><span id="signature">LilWindows</span></footer>
+    <footer><span id="signature"></span></footer>
 </body>
 </html>
 
