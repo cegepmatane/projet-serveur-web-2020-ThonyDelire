@@ -1,7 +1,7 @@
  
 body {
     color:white;
-    background-color:#c2b280;
+    background-color:#0d6ac2;
     background-image:url(image/fond.jpg);
     background-repeat:no-repeat;
     }
@@ -93,6 +93,15 @@ text-decoration:none;
     color: white;
     border-radius: 20px;
     display: inline-block;
+}
+img
+{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
 }
 
 
