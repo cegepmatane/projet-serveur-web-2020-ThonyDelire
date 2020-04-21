@@ -8,14 +8,6 @@ $hote = 'localhost';
 $base = 'sportive';
 
 $dsn = 'mysql:dbname='.$base.';host=' . $hote;
-$basededonnees;
-try
-{
-	$basededonnees = new PDO($dsn, $usager, $motdepasse);
-}
-catch(PDOException $exception)
-{
-	echo $e->getMessage();
-}
-?>
+$connexion = new PDO($dsn, $usager, $motdepasse);
 
+?>

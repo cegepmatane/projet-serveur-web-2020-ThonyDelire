@@ -4,7 +4,7 @@ $MESSAGE_SQL_LISTE_VOITURE = "SELECT id, marque, puissanceHp, torque, resume, no
 //echo $MESSAGE_SQL_LISTE_FILM;
 
 
-$requeteListeVoiture = $basededonnees->prepare($MESSAGE_SQL_LISTE_VOITURE);
+$requeteListeVoiture = $connexion->prepare($MESSAGE_SQL_LISTE_VOITURE);
 $requeteListeVoiture->execute();
 $listeVoiture = $requeteListeVoiture->fetchAll();
 //print_r($listeFilm);

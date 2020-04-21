@@ -40,54 +40,6 @@ text-decoration:none;
     
     
 }
-#menuMembre
-{
-    width: 320px;
-    height: 290px;
-    opacity: 0.90;
-    background: #212224;
-    border-radius: 5%;
-    color: white;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    text-align: center;
-}
-#buttonInscrire{
-    margin-left: 13px;
-    text-align: center;
-    color: #94b8ff;
-}
-.buttonMembre
-{
-    background-color: #134fbf;
-    border: none;
-    color: white;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 30px;
-}
-.buttonMembre:hover
-{
-    background-color: #6e8cc2;
-    border: none;
-    color: white;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 30px;
-    cursor: pointer;
-}
 #menu::before
 {
     z-index : -1;
@@ -141,15 +93,6 @@ text-decoration:none;
     color: white;
     border-radius: 20px;
     display: inline-block;
-}
-
-#index
-{
-    font-size: 18px;
-    margin-top: 10px;
-    color: #9cc3ff;
-
-    
 }
 img
 {

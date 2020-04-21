@@ -6,7 +6,7 @@ $id = $_GET["id"];
 
 $MESSAGE_VOITURE = "SELECT id, marque, puissanceHp, torque, resume, nom, illustration FROM voiture WHERE id=".$id.";";
 
-$requeteVoiture = $basededonnees->prepare($MESSAGE_VOITURE);
+$requeteVoiture = $connexion->prepare($MESSAGE_VOITURE);
 $requeteVoiture->execute();
 $voiture = $requeteVoiture-> fetch();
 //print_r($voiture);
