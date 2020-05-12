@@ -40,6 +40,34 @@ text-decoration:none;
     
     
 }
+#paragraphe
+{
+    width: 320px;
+    height: 290px;
+    opacity: 0.90;
+    background: #212224;
+    border-radius: 5%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+}
+h2{
+    margin-top: -20px;
+}
+#titreMembre
+{
+    margin-top: 5rem;
+    font-size: 50px;
+}
 #menuMembre
 {
     width: 320px;
