@@ -157,10 +157,6 @@ h2{
     text-align: center;
 }
 
-#texteMenu{
-    margin-top: 10px;
-}
-
 #button
 {
     order: none;
@@ -173,6 +169,11 @@ h2{
     color: white;
     border-radius: 20px;
     display: inline-block;
+}
+#miniature{
+   
+    padding: 0px 8px;
+    display: inline;
 }
 
 #index

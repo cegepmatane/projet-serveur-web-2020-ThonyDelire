@@ -37,7 +37,7 @@ $listeVoiture = $requeteListeVoiture->fetchAll();
             <h3 class="nom"><?=$voiture["nom"];?></h3>
             </a>
             <span class="marque"><?=$voiture["marque"];?></span>
-            <img class="miniature" src="mini/<?=$voiture["miniature"]; ?>" alt=""/>
+            <img id="miniature" class="miniature" src="mini/<?=$voiture["miniature"]; ?>" alt=""/>
             </div>
         </div>
 
