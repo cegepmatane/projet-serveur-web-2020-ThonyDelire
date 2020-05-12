@@ -32,7 +32,7 @@ text-decoration:none;
     order: none;
     outline: none;
     position: relative;
-    height: 100px;
+    height: 180px;
     width: 160px;
     text-align: center;
     font-size: 18px;
@@ -126,7 +126,7 @@ h2{
     left:0px;
     top:0px;
     background: #000000;
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 20px;
 }
 
@@ -157,6 +157,10 @@ h2{
     text-align: center;
 }
 
+#texteMenu{
+    margin-top: 10px;
+}
+
 #button
 {
     order: none;
@@ -179,7 +183,7 @@ h2{
 
     
 }
-img
+#image
 {
     width: 50%;
     height: auto;

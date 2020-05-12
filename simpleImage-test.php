@@ -1,8 +1,8 @@
 <?php
     require_once 'lib/simpleimage/SimpleImage.php';       
     $image = new SimpleImage();
-    $image->load('test.png');
+    $image->load('illustration/prelude.jpg');
     $image->resizeToWidth(100);
-    $image->save('mini/image-test.png');
+    $image->save('mini/prelude.jpg');
 ?>
 

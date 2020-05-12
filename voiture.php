@@ -35,7 +35,7 @@ $voiture = $requeteVoiture-> fetch();
         <p class="puissanceHp"><?=$voiture["puissanceHp"];?></p>
         <p class="torque"><?=$voiture["torque"];?></p>
         <p class="resume"><?=$voiture["resume"];?></p>
-        <img class="illustration" src="illustration/<?=$voiture["illustration"]; ?>" alt=""/>
+        <img id="image" class="illustration" src="illustration/<?=$voiture["illustration"]; ?>" alt=""/>
         
         </div>
 

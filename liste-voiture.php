@@ -1,6 +1,6 @@
 <?php
 include "connexion.php";
-$MESSAGE_SQL_LISTE_VOITURE = "SELECT id, marque, puissanceHp, torque, resume, nom FROM voiture;";
+$MESSAGE_SQL_LISTE_VOITURE = "SELECT id, marque, puissanceHp, torque, resume, nom, miniature FROM voiture;";
 //echo $MESSAGE_SQL_LISTE_FILM;
 
 
@@ -37,12 +37,15 @@ $listeVoiture = $requeteListeVoiture->fetchAll();
             <h3 class="nom"><?=$voiture["nom"];?></h3>
             </a>
             <span class="marque"><?=$voiture["marque"];?></span>
+            <img class="miniature" src="mini/<?=$voiture["miniature"]; ?>" alt=""/>
             </div>
         </div>
 
         <?php
         }
         ?>
+    
+    </a>
     </section>
 
     <footer><span id="signature"></span></footer>
