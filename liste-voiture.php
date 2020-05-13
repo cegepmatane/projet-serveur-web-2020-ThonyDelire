@@ -1,5 +1,10 @@
 <?php
-include "connexion.php";
+    require_once "configuration.php";
+    require CHEMIN_ACCESSEUR . "VoitureDAO.php";
+
+
+    $listeVoiture = VoitureDAO::listerVoiture();
+/*include "connexion.php";
 $MESSAGE_SQL_LISTE_VOITURE = "SELECT id, marque, puissanceHp, torque, resume, nom, miniature FROM voiture;";
 //echo $MESSAGE_SQL_LISTE_FILM;
 
@@ -7,7 +12,7 @@ $MESSAGE_SQL_LISTE_VOITURE = "SELECT id, marque, puissanceHp, torque, resume, no
 $requeteListeVoiture = $basededonnees->prepare($MESSAGE_SQL_LISTE_VOITURE);
 $requeteListeVoiture->execute();
 $listeVoiture = $requeteListeVoiture->fetchAll();
-//print_r($listeFilm);
+//print_r($listeFilm);*/
 
 ?>
 
@@ -26,6 +31,7 @@ $listeVoiture = $requeteListeVoiture->fetchAll();
 
     <section id="contenu">
         <header id="menuTitle"><h2>Liste des voitures</h2></header>
+        <a class="buttonMembre" href="excel.php">Exporte en Excel</a>
         <?php
         foreach($listeVoiture as $voiture)
         {
@@ -44,8 +50,8 @@ $listeVoiture = $requeteListeVoiture->fetchAll();
         <?php
         }
         ?>
-    
-    </a>
+
+        
     </section>
 
     <footer><span id="signature"></span></footer>
