@@ -16,21 +16,9 @@ $listeVoiture = $requeteListeVoiture->fetchAll();
 
 ?>
 
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Wiki Sportive</title>
-</head>
-<body>
-    <header>
-        <h1 id="menuTitle">Wiki de la petite Sportive</h1>
-        <nav></nav>
-    </header>
+<?php include "entete.php";?>
 
     <section id="contenu">
-        <header id="menuTitle"><h2>Liste des voitures</h2></header>
         <a class="buttonMembre" href="excel.php">Exporte en Excel</a>
         <?php
         foreach($listeVoiture as $voiture)
@@ -54,6 +42,4 @@ $listeVoiture = $requeteListeVoiture->fetchAll();
         
     </section>
 
-    <footer><span id="signature"></span></footer>
-</body>
-</html>
+    <?php include "pied-page.php";?>

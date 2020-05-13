@@ -3,7 +3,7 @@ body {
     color:white;
     background-color:#0d6ac2;
     background-image:url(image/fond.jpg);
-    background-repeat:no-repeat;
+    
     }
 .puissanceHp {
     color:rgb(238, 238, 135);
@@ -193,6 +193,34 @@ h2{
     margin-right: auto;
     border: 5px solid black;
 }
+#rechercheRapide
+{
+    margin-left: 85%;
+}
+#buttonRecherche
+{
+    background-color: #134fbf;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+#resultatRecherche
+{
+    border: 3px solid black;
+    text-decoration: none;
+    margin-top: 10px;
+    opacity: 0.90;
+    background-color: rgb(53, 107, 187);
+    
+}
+
 
 
 

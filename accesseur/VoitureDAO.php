@@ -21,6 +21,28 @@ class VoitureDAO{
     return $listeVoiture;
   }
 
+  public static function listerRechercheVoiture(){
+    $MESSAGE_SQL_LISTE_VOITURE = "SELECT id, marque, puissanceHp, torque, resume, nom, miniature FROM voiture;";
+
+    $requeteListeVoiture = BaseDeDonnees::getConnexion()->prepare($MESSAGE_SQL_LISTE_VOITURE);
+    $requeteListeVoiture->execute();
+    $listeVoiture = $requeteListeVoiture->fetchAll();
+    return $listeVoiture;
+  }
+  
+  public static function lireRechercheRapide($texteRecherche)
+  {
+    if(empty($texteRecherche))
+      $MESSAGE_SQL_LISTE_RESULTAT_RECHERCHE = "SELECT id, nom, marque, resume FROM voiture WHERE nom LIKE '%null%' OR marque LIKE '%null%' OR resume LIKE '%null%';";
+      else
+      $MESSAGE_SQL_LISTE_RESULTAT_RECHERCHE = "SELECT id, nom, marque, resume FROM voiture WHERE nom LIKE '%$texteRecherche%' OR marque LIKE '%$texteRecherche%' OR resume LIKE '%$texteRecherche%';";
+      $requeteListeRecherche = BaseDeDonnees::getConnexion()->prepare($MESSAGE_SQL_LISTE_RESULTAT_RECHERCHE);
+      $requeteListeRecherche->execute();
+      $listeResultatRecherche = $requeteListeRecherche->fetchAll();
+
+      return $listeResultatRecherche;
+  }
+
   public static function ajouterVoiture($voiture){
     $MESSAGE_SQL_AJOUTER_VOITURE =
       "INSERT INTO voiture (marque, puissanceHp, torque, resume, nom) VALUES(" .
