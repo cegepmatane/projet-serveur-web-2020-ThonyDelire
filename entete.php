@@ -18,10 +18,12 @@
 				<input type="text" name="recherche" id="recherche"/>			
             </div>
             <input id="buttonRecherche" type="submit" value="recherche">
-		</form>
+        </form>
+        
         
         <a id="index" href="liste-voiture.php"><h1>Voitures</h1></a>
         <a id="index" href="membre.php"><h1>Membre</h1></a>
+        <a style="float:right" class="buttonMembre" href="rechercheAvance.php">Recherche Avancée</a>
     </nav> 
     <section style="border: solid; background-color: #d1d1cf;" id="contenu">
 		

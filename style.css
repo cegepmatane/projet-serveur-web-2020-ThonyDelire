@@ -1,8 +1,9 @@
  
 body {
     color:white;
-    background-color:#0d6ac2;
+    background-color:#a5d2fc;
     background-image:url(image/fond.jpg);
+    background-repeat: no-repeat;
     
     }
 .puissanceHp {
@@ -75,6 +76,23 @@ h2{
     opacity: 0.90;
     background: #212224;
     border-radius: 5%;
+    margin-top: 30px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    text-align: center;
+}
+#menuInscription{
+    width: 320px;
+    height: 33%;
+    opacity: 0.90;
+    background: #212224;
+    border-radius: 5%;
+    margin-top: 30px;
     color: white;
     top: 50%;
     left: 50%;
@@ -135,6 +153,7 @@ h2{
 {
     text-align: center;
     font-size: 40px;
+    
 }
 
 .listeBoxbak
@@ -219,6 +238,32 @@ h2{
     opacity: 0.90;
     background-color: rgb(53, 107, 187);
     
+}
+
+#resumePara
+{
+    border: 3px solid black;
+    text-decoration: none;
+    opacity: 0.90;
+    background-color: rgb(53, 107, 187);
+}
+
+#menuRechercheAvance
+{
+    width: 320px;
+    height: 38%;
+    opacity: 0.90;
+    background: #212224;
+    border-radius: 5%;
+    margin-top: 40px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    text-align: center;
 }
 
 
