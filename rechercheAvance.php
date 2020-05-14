@@ -6,7 +6,7 @@
     <section id="contenu">
 		<header><h2 style="margin-top: 10px;">Recherche Avancée</h2></header>
 		
-		<form id="menuRechercheAvance" action="traitement-ajouter-voiture.php" method="post" enctype="multipart/form-data">
+		<form id="menuRechercheAvance" action="resultatRechercheAvance.php" method="post" enctype="multipart/form-data">
 		
 			<div class="champs">
 				<label for="nom">Nom</label><br>
@@ -21,18 +21,18 @@
             <div class="champs">
                 <label for="annee">Année de sortie</label><br>
                 <select name= "annee">
-                    <option value="1980">1980</option>
-                    <option value="1990">1990</option>
-                    <option value="2000">2000</option>
+                    <option value="1980-a-1989">1980 &agrave; 1989</option>
+                    <option value="1990-a-1999">1990 &agrave; 1999</option>
+                    <option value="2000-a-2009">2000 &agrave; 2009</option>
                 </select>
             </div>
             
             <div class="champs">
                 <p>
                     <label style="font-size: 20px;">Nationalité :</label><br> 
-                    Française :<input type="checkbox" name="française"/><br>
-                    Allemande :<input type="checkbox" name="allemande"/><br>
-                    Japonaise :<input type="checkbox" name="japonaise"/>	
+                    Française :<input type="checkbox" name="categorie[francaise]"/><br>
+                    Allemande :<input type="checkbox" name="categorie[allemande]"/><br>
+                    Japonaise :<input type="checkbox" name="categorie[japonaise]"/>	
                 </p>	
             </div>
 

@@ -30,7 +30,7 @@ $voiture = $requeteVoiture-> fetch();
 
         <div class="voiture">
         <a href="voiture.php?id=<?=$voiture["id"];?>"></a>
-        <h3 id="titre" class="nom"><?=$voiture["nom"];?></h3>
+        <h3 style="margin-top: 60px;" id="titre" class="nom"><?=$voiture["nom"];?></h3>
         <p class="puissanceHp"><?=$voiture["puissanceHp"];?></p>
         <p class="torque"><?=$voiture["torque"];?></p>
         <p id="resumePara" class="resume"><?=$voiture["resume"];?></p>

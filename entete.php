@@ -17,7 +17,7 @@
 			<div>
 				<input type="text" name="recherche" id="recherche"/>			
             </div>
-            <input id="buttonRecherche" type="submit" value="recherche">
+            <input id="buttonRecherche" type="submit" value="Recherche">
         </form>
         
         
