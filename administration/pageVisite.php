@@ -39,7 +39,7 @@ td{
 <body>
 
 <h1>Visite Statistique</h1>
-<table style="width:400px; position: absolute;">
+<table style="width:400px; display: inline;">
   <tr>
     <th>Journée</th>
     <th>Clics</th>
@@ -100,7 +100,7 @@ td{
   
 </table>
 
-<table style="width:1200px; float:right; position: relative;">
+<table style="width:1200px; float:right; display: inline;">
   <tr>
     <th>Navigateur</th>
     <th>Clics</th>
