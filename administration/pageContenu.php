@@ -3,11 +3,17 @@
     require CHEMIN_ACCESSEUR . "VoitureDAO.php";
 
     $listeContenu = VoitureDAO::listerContenu();
+
+
+    $nombreJaponaise = 0;
+    $nombreAllemande = 0;
+    $nombreFrancaise = 0;
 ?>
  
  <!DOCTYPE html>
 <html>
 <head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <style>
 table, th, td {
@@ -42,6 +48,19 @@ td{
         foreach($listeContenu as $resultat)
         {
 
+          if($resultat["nationalite"] == "japonaise")
+          {
+            $nombreJaponaise = $resultat["COUNT(id)"];
+          }
+          if($resultat["nationalite"] == "francaise")
+          {
+            $nombreFrancaise = $resultat["COUNT(id)"];
+          }
+          if($resultat["nationalite"] == "allemande")
+          {
+            $nombreAllemande = $resultat["COUNT(id)"];
+          }
+
   ?>
   <tr>
     <td><?= $resultat["nationalite"]; ?></td>
@@ -58,6 +77,34 @@ td{
   <?php } ?>
   
 </table>
+
+<div class="chart-container" style="position: relative; height:20vh; width:40vw">
+      <canvas id="graphique" ></canvas>
+    </div>
+
+<script>
+var donnees = [<?php echo $nombreJaponaise; ?>, <?php echo $nombreFrancaise; ?>, <?php echo $nombreAllemande; ?>];
+var etiquettes = ['japonaise', 'française', 'allemande'];
+var couleurs = ['rgba(255, 99, 132, 0.9)','rgba(54, 162, 235, 0.9)', 'rgba(255, 206, 86, 0.9)']
+
+var cible = document.getElementById('graphique');
+var graphiqueTarte = new Chart(cible, {
+    type: 'pie',
+    data: {
+        labels: etiquettes,
+        datasets: [{
+            label: 'Contenu par catégorie',
+            data: donnees,
+            backgroundColor: couleurs
+        }]
+    },
+    options: {
+        responsive: true
+    }
+});
+
+
+</script>
 
 </body>
 </html>
