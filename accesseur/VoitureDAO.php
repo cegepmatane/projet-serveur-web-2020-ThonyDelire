@@ -19,6 +19,23 @@ class VoitureDAO{
     return $listeContenu;
   }
 
+  public static function listerVisiteJournee(){
+    $MESSAGE_SQL_VISITE = "SELECT DAYOFWEEK(CURDATE()) as journee;";
+    $requeteListeVisite = BaseDeDonnees::getConnexion()->prepare($MESSAGE_SQL_VISITE);
+    $requeteListeVisite->execute();
+    $listeVisite = $requeteListeVisite-> fetchall();
+    //print_r($MESSAGE_SQL_VISITE);
+    return $listeVisite;
+  }
+  public static function listerVisite(){
+    $MESSAGE_SQL_LISTE_VISITE = "SELECT COUNT(id) as clic, journee, ip, explorateur FROM visite GROUP BY journee, ip, explorateur;";
+
+    $requeteListeVoiture = BaseDeDonnees::getConnexion()->prepare($MESSAGE_SQL_LISTE_VISITE);
+    $requeteListeVoiture->execute();
+    $listeJour = $requeteListeVoiture->fetchAll();
+    return $listeJour;
+  }
+
   public static function listerVoiture(){
     $MESSAGE_SQL_LISTE_VOITURE = "SELECT id, marque, puissanceHp, torque, resume, nom, miniature FROM voiture;";
 

@@ -39,3 +39,4 @@ $listeVoiture = $requeteListeVoiture->fetchAll();
 ?>
 
 <a id="button" href="pageContenu.php">Tableau Contenu</a>
+<a id="button" href="pageVisite.php">Tableau Visite</a>
