@@ -11,6 +11,13 @@ class VoitureDAO{
     $voiture = $requeteVoiture->fetch();
     return $voiture;
   }
+  public static function listerContenu(){
+    $MESSAGE_SQL_CONTENU = "SELECT COUNT(id), nationalite, STD(annee) as annee, AVG(annee) as moyenne, SUM(anneeProdruit) as anneeTotal, MAX(anneeProdruit) as anneeMax, MIN(anneeProdruit) as anneeMin FROM voiture GROUP BY nationalite;";
+    $requeteListeContenu = BaseDeDonnees::getConnexion()->prepare($MESSAGE_SQL_CONTENU);
+    $requeteListeContenu->execute();
+    $listeContenu = $requeteListeContenu-> fetchall();
+    return $listeContenu;
+  }
 
   public static function listerVoiture(){
     $MESSAGE_SQL_LISTE_VOITURE = "SELECT id, marque, puissanceHp, torque, resume, nom, miniature FROM voiture;";

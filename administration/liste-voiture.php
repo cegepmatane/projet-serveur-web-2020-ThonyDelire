@@ -37,3 +37,5 @@ $listeVoiture = $requeteListeVoiture->fetchAll();
 		<?php 		
 	}
 ?>
+
+<a id="button" href="pageContenu.php">Tableau Contenu</a>
