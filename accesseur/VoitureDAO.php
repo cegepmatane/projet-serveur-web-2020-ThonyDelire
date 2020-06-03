@@ -18,6 +18,13 @@ class VoitureDAO{
     $listeContenu = $requeteListeContenu-> fetchall();
     return $listeContenu;
   }
+  public static function listerMoyenne(){
+    $MESSAGE_SQL_MOYENNE = "SELECT SUM(annee) as somme, MAX(annee) as max, MIN(annee) as min, COUNT(annee) as total FROM voiture;";
+    $requeteListeMoyenne = BaseDeDonnees::getConnexion()->prepare($MESSAGE_SQL_MOYENNE);
+    $requeteListeMoyenne->execute();
+    $listeMoyenne = $requeteListeMoyenne-> fetchall();
+    return $listeMoyenne;
+  }
 
   public static function listerVisiteJournee(){
     $MESSAGE_SQL_VISITE = "SELECT DAYOFWEEK(CURDATE()) as journee;";

@@ -3,6 +3,32 @@
     require CHEMIN_ACCESSEUR . "VoitureDAO.php";
 
     $listeContenu = VoitureDAO::listerContenu();
+    $listeMoyenne = VoitureDAO::listerMoyenne();
+    
+    
+
+    foreach($listeMoyenne as $resultatMoyenne)
+    {
+
+      if($resultatMoyenne["somme"])
+      {
+        $somme = $resultatMoyenne["somme"];
+      }
+      if($resultatMoyenne["max"])
+      {
+        $max = $resultatMoyenne["max"];
+      }
+      if($resultatMoyenne["min"])
+      {
+        $min = $resultatMoyenne["min"];
+      }
+      if($resultatMoyenne["total"])
+      {
+        $total = $resultatMoyenne["total"];
+      }
+    }
+    $moyenneElaguee = ($somme - $max - $min)/($total - 2);
+
 
 
     $nombreJaponaise = 0;
@@ -28,6 +54,7 @@ td{
     color: black;
     font-size: 20px;
 }
+
 </style>
 </head>
 <body>
@@ -38,8 +65,8 @@ td{
     <th>Nationalite</th>
     <th>Nombre</th>
     <th>Écart-type</th>
-    <th>Année de production</th>
-    <th>Nombre année produit</th>
+    <th>Année de production moyenne</th>
+    <th>Nombre année produit total</th>
     <th>Année max</th>
     <th>Année min</th>
 
@@ -78,7 +105,18 @@ td{
   
 </table>
 
-<div class="chart-container" style="position: relative; height:20vh; width:40vw">
+<table>
+            <tr>
+                <th>Moyenne Total Nombre de Produit sans Extremum</th>
+            </tr>
+
+            <tr>
+                <td><?php echo $moyenneElaguee; ?></td>
+            </tr>
+  
+  </table>
+
+<div class="chart-container" style="position: relative; height:20vh; width:40vw;">
       <canvas id="graphique" ></canvas>
     </div>
 
