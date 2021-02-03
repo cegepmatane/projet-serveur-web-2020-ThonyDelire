@@ -14,7 +14,7 @@
     
 ?> 
 <?php include "entete.php"?>
-<header><h2 style="margin-top: 10px;">Résultat de la recherche</h2></header>
+<header><h2 style="margin-top: 10px; color: white;">Résultat de la recherche</h2></header>
 
 <?php
     foreach($listeResultatRecherche as $resultat)
@@ -22,11 +22,11 @@
 ?>
 
 <div id="resultatRecherche">
-    <a style="font-size: 30px; color: yellow;" href="voiture.php?id=<?= $resultat["id"];?>">
+    <a style="font-size: 30px; color: #009ab5; background-color: rgb(24, 24, 24);" href="voiture.php?id=<?= $resultat["id"];?>">
             <?= $resultat["nom"]; ?> <?= $resultat["marque"]; ?>
     </a>
 
-    <p><?= $resultat["resume"];?></p>
+    <p class="text-resume"><?= $resultat["resume"];?></p>
 </div>
 
 <?php } ?>

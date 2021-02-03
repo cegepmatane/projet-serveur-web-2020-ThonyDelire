@@ -4,7 +4,7 @@
     
 
     <div id="paragraphe">
-        <h1>Bienvenu sur l'espace membre</h1>
+        <h1>Bienvenue sur l'espace membre</h1>
         <p>Vous pouvez allez consulter vos voitures préférées!</p>
 
     </div>

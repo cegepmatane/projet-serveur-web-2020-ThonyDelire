@@ -1,207 +1,93 @@
- 
-body {
-    color:white;
-    background-color:#a5d2fc;
-    background-image:url(image/fond.jpg);
-    background-repeat: no-repeat;
-    
-    }
-.puissanceHp {
-    color:rgb(238, 238, 135);
-    font-size: 20px;
-    text-align: center;
-}
-.torque {
-    color:rgb(238, 238, 135);
-    font-size: 20px;
-    text-align: center;
-}
-.nom {
-    color:rgb(219, 193, 74);
-}
-.nom:hover
-{
-    color:rgb(220, 231, 156);
-}
-a:link
-{
-text-decoration:none;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(37, 37, 37);
 }
 
-
-#menu{
-    order: none;
-    outline: none;
-    position: relative;
-    height: 170px;
-    width: 160px;
-    text-align: center;
-    font-size: 18px;
-    color: white;
-    
-    
-}
-#paragraphe
-{
-    width: 320px;
-    height: 290px;
-    opacity: 0.90;
-    background: #212224;
-    border-radius: 5%;
-    color: white;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    text-align: center;
-
-}
-h1{
-    text-align: center;
-}
-h2{
-    margin-top: -20px;
-}
-#titreMembre
-{
-    margin-top: 5rem;
-    font-size: 50px;
-}
-#menuMembre
-{
-    width: 320px;
-    height: 290px;
-    opacity: 0.90;
-    background: #212224;
-    border-radius: 5%;
-    margin-top: 30px;
-    color: white;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    text-align: center;
-}
-#menuInscription{
-    width: 320px;
-    height: 33%;
-    opacity: 0.90;
-    background: #212224;
-    border-radius: 5%;
-    margin-top: 30px;
-    color: white;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-    text-align: center;
-}
-#buttonInscrire{
-    margin-left: 13px;
-    text-align: center;
-    color: #94b8ff;
-}
-.buttonMembre
-{
-    background-color: #134fbf;
-    border: none;
-    color: white;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     font-size: 16px;
-    margin-top: 10px;
-    border-radius: 30px;
-}
-.buttonMembre:hover
-{
-    background-color: #6e8cc2;
-    border: none;
     color: white;
-    padding: 10px 32px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+ul {
+    list-style-type: none;
+    width: 500px;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #009ab5;
+}
+
+li img {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+li p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+li {
+    padding: 10px;
+    overflow: auto;
+}
+
+.li-liste-voiture:hover{
+    background: rgb(90, 89, 89);
     cursor: pointer;
 }
-#menu::before
-{
-    z-index : -1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left:0px;
-    top:0px;
-    background: #000000;
-    opacity: 0.7;
-    border-radius: 20px;
+.nav_top {
+    list-style: none;
 }
-
-
-#titre
-{
-    text-align: center;
-    font-size: 40px;
-    
-}
-
-.listeBoxbak
-{
-    width: 320px;
-    height: 420px;
-    background: rgb(53, 53, 53);
-    border-radius: 5%;
-    color: white;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 90px 30px;
-}
-
-#menuTitle
-{
-    text-align: center;
-}
-
-#button
-{
-    order: none;
-    outline: none;
-    height: 40px;
-    width: 160px;
-    background: #ceba0a;
-    text-align: center;
-    font-size: 18px;
-    color: white;
-    border-radius: 20px;
+.nav_top li {
     display: inline-block;
-}
-#miniature{
-   
-    padding: 0px 8px;
-    display: inline;
+    padding: 0px 20px;
 }
 
-#index
+.nav_top li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_top li a:hover {
+    color: #009ab5;
+}
+
+#buttonRecherche
 {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #9cc3ff;
+    padding: 9px 25px;
+    background-color: #009ab5;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
 
-    
+#buttonRecherche:hover {
+    background-color: thistle;
+}
+
+.listeBox{
+    border: 3px solid black;
+    text-decoration: none;
+    margin-top: 20px;
+    opacity: 0.90;
 }
 #image
 {
@@ -212,22 +98,23 @@ h2{
     margin-right: auto;
     border: 5px solid black;
 }
-#rechercheRapide
+
+#resumePara
 {
-    margin-left: 85%;
-}
-#buttonRecherche
-{
-    background-color: #134fbf;
-    border: none;
-    color: white;
-    padding: 10px 32px;
-    text-align: center;
+    border: 3px solid black;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 10px;
-    border-radius: 30px;
+    color: whitesmoke;
+    font-size: 20px;
+    opacity: 0.90;
+    background-color: rgb(24, 24, 24);
+}
+
+.nomVoiture{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: #009ab5;
+    border: 3px solid black;
 }
 
 #resultatRecherche
@@ -236,38 +123,54 @@ h2{
     text-decoration: none;
     margin-top: 10px;
     opacity: 0.90;
-    background-color: rgb(53, 107, 187);
+    background-color: rgb(24, 24, 24);
     
 }
-
-#resumePara
+.text-resume
 {
-    border: 3px solid black;
-    text-decoration: none;
-    opacity: 0.90;
-    background-color: rgb(53, 107, 187);
+    color: white;
+    background-color: rgb(24, 24, 24);
 }
 
-#menuRechercheAvance
+.menuMembre
 {
-    width: 320px;
-    height: 38%;
+    border: 3px solid #009ab5;
+    width: auto;
+    height: auto;
     opacity: 0.90;
-    background: #212224;
     border-radius: 5%;
-    margin-top: 40px;
+    margin-top: auto;
     color: white;
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
     box-sizing: border-box;
-    padding: 70px 30px;
+    padding: 70px 60px;
     text-align: center;
 }
 
+.champText{
+    background-color: white;
+}
 
+.textMembre{
+    margin-top: 10px;
+}
 
-
-
-
+#espace-membre{
+    border: 3px solid #009ab5;
+    width: auto;
+    height: auto;
+    opacity: 0.90;
+    border-radius: 5%;
+    margin-top: auto;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 60px;
+    text-align: center;
+}

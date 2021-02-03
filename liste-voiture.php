@@ -37,19 +37,23 @@ $listeVoiture = $requeteListeVoiture->fetchAll();
 <?php include "entete.php";?>
 
     <section id="contenu">
-        <a class="buttonMembre" href="excel.php">Exporte en Excel</a>
+        <a style="margin-buttom: 10px" id="buttonRecherche" href="excel.php">Exporte en Excel</a>
         <?php
         foreach($listeVoiture as $voiture)
         {
-            //echo $film["titre"];
+
         ?>
         <div class="listeBox">
             <div class="voiture" id="menu">
+            <ul>
+            <li class="li-liste-voiture">
+            <img id="miniature" class="miniature" src="mini/<?=$voiture["miniature"]; ?>" alt=""/>
             <a href="voiture.php?id=<?=$voiture["id"];?>">
             <h3 class="nom"><?=$voiture["nom"];?></h3>
             </a>
-            <span class="marque"><?=$voiture["marque"];?></span>
-            <img id="miniature" class="miniature" src="mini/<?=$voiture["miniature"]; ?>" alt=""/>
+            <p class="marque"><?=$voiture["marque"];?></p>
+            </li>
+            </ul>
             </div>
         </div>
 

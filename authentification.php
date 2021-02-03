@@ -1,16 +1,16 @@
 <section id="authentification">
-<div id="menuMembre"> 
+<div class="menuMembre"> 
 <form action="membre.php" method="POST">
-    <div>
+    <div class="textMembre">
     <label>Pseudonyme</label>
-    <input type="text" name="pseudonyme"/>
+    <input class="champText" type="text" name="pseudonyme"/>
     </div>
-    <div>
+    <div class="textMembre">
     <label>Mot de passe</label>
-    <input type="password" name="motDePasse"/>
+    <input class="champText" type="password" name="motDePasse"/>
     </div>
 
-    <input class="buttonMembre" type="submit" name="action-connexion" value="Connexion-vous"/>
+    <input style="margin-top: 30px;" id="buttonRecherche" type="submit" name="action-connexion" value="Connexion-vous"/>
     <a id="buttonInscrire" href="inscription.php">Inscrivez-vous</a>
 
 </form>

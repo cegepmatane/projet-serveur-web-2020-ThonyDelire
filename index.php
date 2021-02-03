@@ -1,6 +1,7 @@
  
 <?php include "entete.php" ?>
-	<a href="inscription.php">Inscrivez-vous dès maintenant!</a>
+    <img src="image/fond1.jpg" alt="fond" style="height: auto; max-width: 100%;">
+	
 <?php include "pied-page.php"?>
 <?php
     require_once "configuration.php";

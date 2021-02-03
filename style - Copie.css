@@ -1,0 +1,273 @@
+ 
+body {
+    color:white;
+    background-color:#a5d2fc;
+    background-image:url(image/fond.jpg);
+    background-repeat: no-repeat;
+    
+    }
+.puissanceHp {
+    color:rgb(238, 238, 135);
+    font-size: 20px;
+    text-align: center;
+}
+.torque {
+    color:rgb(238, 238, 135);
+    font-size: 20px;
+    text-align: center;
+}
+.nom {
+    color:rgb(219, 193, 74);
+}
+.nom:hover
+{
+    color:rgb(220, 231, 156);
+}
+a:link
+{
+text-decoration:none;
+}
+
+
+#menu{
+    order: none;
+    outline: none;
+    position: relative;
+    height: 170px;
+    width: 160px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    
+    
+}
+#paragraphe
+{
+    width: 320px;
+    height: 290px;
+    opacity: 0.90;
+    background: #212224;
+    border-radius: 5%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    text-align: center;
+
+}
+h1{
+    text-align: center;
+}
+h2{
+    margin-top: -20px;
+}
+#titreMembre
+{
+    margin-top: 5rem;
+    font-size: 50px;
+}
+#menuMembre
+{
+    width: 320px;
+    height: 290px;
+    opacity: 0.90;
+    background: #212224;
+    border-radius: 5%;
+    margin-top: 30px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    text-align: center;
+}
+#menuInscription{
+    width: 320px;
+    height: 33%;
+    opacity: 0.90;
+    background: #212224;
+    border-radius: 5%;
+    margin-top: 30px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    text-align: center;
+}
+#buttonInscrire{
+    margin-left: 13px;
+    text-align: center;
+    color: #94b8ff;
+}
+.buttonMembre
+{
+    background-color: #134fbf;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+.buttonMembre:hover
+{
+    background-color: #6e8cc2;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#menu::before
+{
+    z-index : -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    background: #000000;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+
+#titre
+{
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.listeBoxbak
+{
+    width: 320px;
+    height: 420px;
+    background: rgb(53, 53, 53);
+    border-radius: 5%;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 90px 30px;
+}
+
+#menuTitle
+{
+    text-align: center;
+}
+
+#button
+{
+    order: none;
+    outline: none;
+    height: 40px;
+    width: 160px;
+    background: #ceba0a;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+    display: inline-block;
+}
+#miniature{
+   
+    padding: 0px 8px;
+    display: inline;
+}
+
+#index
+{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #9cc3ff;
+
+    
+}
+#image
+{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+}
+#rechercheRapide
+{
+    margin-left: 85%;
+}
+#buttonRecherche
+{
+    background-color: #134fbf;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+#resultatRecherche
+{
+    border: 3px solid black;
+    text-decoration: none;
+    margin-top: 10px;
+    opacity: 0.90;
+    background-color: rgb(53, 107, 187);
+    
+}
+
+#resumePara
+{
+    border: 3px solid black;
+    text-decoration: none;
+    opacity: 0.90;
+    background-color: rgb(53, 107, 187);
+}
+
+#menuRechercheAvance
+{
+    width: 320px;
+    height: 38%;
+    opacity: 0.90;
+    background: #212224;
+    border-radius: 5%;
+    margin-top: 40px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+
+
+
+
+

@@ -2,8 +2,8 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$usager = 'antoine';
-$motdepasse = 'root';
+$usager = 'root';
+$motdepasse = '';
 $hote = 'localhost';
 $base = 'sportive';
 
