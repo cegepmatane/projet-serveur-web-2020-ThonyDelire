@@ -192,4 +192,25 @@ text-decoration:none;
     
 
 }
+.menuMembre
+{
+    border: 3px solid #009ab5;
+    width: auto;
+    height: auto;
+    opacity: 0.90;
+    border-radius: 5%;
+    margin-top: auto;
+    color: white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.textMembre{
+    margin-top: 10px;
+}
 
