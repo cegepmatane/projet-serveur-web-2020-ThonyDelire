@@ -22,7 +22,7 @@
 ?>
 
 <div id="resultatRecherche">
-    <a style="font-size: 30px; color: #009ab5; background-color: rgb(24, 24, 24);" href="voiture.php?id=<?= $resultat["id"];?>">
+    <a style="font-size: 30px; color: #009ab5; background-color: rgb(24, 24, 24);" href="voiture-<?= $resultat["id"];?>.php">
             <?= $resultat["nom"]; ?> <?= $resultat["marque"]; ?>
     </a>
 
