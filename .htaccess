@@ -1,3 +1,4 @@
+
 RewriteEngine on
 
-RewriteRule ^voiture-([0-9]+).php$   /Sportive/voiture.php?id=$1 [L]
+RewriteRule ^voiture-([0-9]+)$   /voiture.php?id=$1 [L]
